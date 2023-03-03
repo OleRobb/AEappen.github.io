@@ -20,9 +20,12 @@
           <div class="camera-1"></div>
         </div>
         <div class="blue-box">
-          <div class="DineVarer-text">Dine Varer</div>
+          <div class="DineVarer-text"></div>
         </div>
-        <div class="top-knapper"></div>
+        <div class="top-text">          
+          <div class="Dine-varer">Dine-varer:</div>
+          <div class="Utløpsdato">Utløpsdato:</div>
+        </div>
         <div class="utløpsdato-container">
           <div class="utløpsdato text-1">
             <div class="utløpsdato-text-container">Kjøttdeig</div>
@@ -106,10 +109,6 @@
               clip-rule="evenodd"></path>
             <path d="M2 6h5v4H2V6zm12.5 3.5a1.5 1.5 0 000-3v3z"></path>
           </svg>
-        </div>
-        <div class="top-info">
-          <div class="top-info-text">Dine varer</div>
-          <div class="top-info-text">Utløpsdato</div>
         </div>
         <div class="menu-bar">
           <button
@@ -215,7 +214,6 @@
       font-size: 8px;
       position: absolute;
       padding: 4px;
-      margin-top: 5pxpx;
       margin-left: 130px;
     }
 
@@ -228,38 +226,42 @@
       align-items: center;
       font-size: 8px;
       color: white;
-      height: 10%;
+      height: 13.5%;
     }
 
     .DineVarer-text {
-      margin-top: 10px;
+      margin-top: -10px;
     }
 
-    .top-info {
+    .top-text {
+      background-color:#003ea5 ;
+      height: 5%;
+      width: 100%;
+      margin-top: 22%;
       position: absolute;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       font-size: 10px;
-      height: 3%;
-      margin-top: 23%;
-      color: #003ea5;
-      width: 100%;
+      color: #ffffff;
+      
+    }
+
+    .Dine-varer {
+      margin-right: 45px;
     }
 
     .utløpsdato-container {
-      height: 75%;
+      height: 80%;
       width: 100%;
-      margin-top: 31%;
+      margin-top: 31.9%;
       position: absolute;
       grid: 100px;
       overflow: auto;
-      border-top: 1px solid grey;
     }
 
     ::-webkit-scrollbar {
-      width: 4px;
-      height: 4px;
+      width: 2px;
     }
 
     ::-webkit-scrollbar-track {
@@ -281,9 +283,14 @@
       justify-content: space-around;
       align-items: center;
       font-size: 12px;
-      padding: 2px;
       height: 11%;
-      color: #003ea5;
+      color: #000000;
+      background-color: rgb(235, 235, 235);
+      margin-top: 10px;
+      margin-right: 5px;
+      margin-left: 5px;
+      border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
 
     .utløpsdato-text-container {
@@ -293,7 +300,9 @@
       border-radius: 4px;
       height: 60%;
       width: 40%;
-      background-color: #f1f0f0;
+      background-color: rgb(235, 235, 235);
+      
+
     }
 
     .menu-bar {
