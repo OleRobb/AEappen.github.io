@@ -57,8 +57,23 @@
             <path d="M2 6h5v4H2V6zm12.5 3.5a1.5 1.5 0 000-3v3z"></path>
           </svg>
         </div>
-        <div class="blue-box">Statistikk</div>
-        <img class="profil-side" src="" alt="" />
+        <div class="blue-box"><div class="statistikk-text-blue-box">Statistikk</div></div>
+        <div class="statistikk-container">
+          <div class="statistikk-graf-container">
+            <img class="statistikk-graf" src="Bilder/Statistikk-graf.png" alt="">
+          </div>
+          <div class="statistikk-info">
+            <div class="penger-spart">
+              <img class="penger-spart-bilde" src="Bilder/Penger-spart.png" alt="">
+              <div class="penger-spart-text"> Penger spart: <br> <center>2 934</center></div>
+            </div>
+            <div class="co2-spart">
+              <img class="CO2-spart-bilde" src="Bilder/CO2-spart.png" alt="">
+              <div class="CO2-spart-text"> Penger spart: <br> <center>2 934</center></div>
+            </div>
+          </div>
+        </div>
+        
         <div class="menu-bar">
           <button
             onclick="window.location.href='Æ-app.html';"
@@ -176,13 +191,95 @@
       align-items: center;
       font-size: 8px;
       color: white;
-      height: 15%;
+      height: 10%;
     }
 
-    .profil-side {
-      height: 83.5%;
-      margin-top: 20px;
+    .statistikk-text-blue-box {
+      margin-top: 12px;
+    }
+
+    .statistikk-container {
+      background-color: rgba(255, 255, 255, 0.267);
+      height: 80%;
+      width: 100%;
       position: absolute;
+      grid: 100px;
+      justify-content: center;
+      margin-top: 19.5%;
+    }
+
+    .statistikk-graf-container {
+      background-color: rgb(255, 255, 255);
+      margin: 8.5px;
+      height: 50%;
+      width: 90%;
+      margin-top: 10%;
+      border-radius: 7px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    }
+
+    .statistikk-graf {
+      background-color: rgba(255, 255, 255, 0.267);
+      margin: 8.5px;
+      height: 90%;
+      width: 90%;
+      border-radius: 2px;
+    }
+
+    .statistikk-info {
+      height: 30%;
+      width: 90%;
+      margin: 8.5px;
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .penger-spart{
+      background-color: rgb(255, 255, 255);
+      height: 85%;
+      width: 90%;
+      margin-right: 5px;
+      border-radius: 7px;
+      grid: 100px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      display: flex;
+      justify-content: center;
+      font-size: 10px;
+    }
+
+    .co2-spart{
+      background-color: rgb(255, 255, 255);
+      height: 85%;
+      width: 90%;
+      margin-left: 5px;
+      border-radius: 7px;
+      grid: 100px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      display: flex;
+      justify-content: center;
+      font-size: 10px;
+    }
+
+    .penger-spart-text {
+      position: absolute;
+      margin-top:40px;
+      line-height: 130%;
+    }
+
+    .CO2-spart-text {
+      position: absolute;
+      margin-top:40px;
+      line-height: 130%;
+    }
+
+    .penger-spart-bilde {
+      height: 50px;
+    }
+
+    .CO2-spart-bilde {
+      height: 50px;
     }
 
     .menu-bar {
