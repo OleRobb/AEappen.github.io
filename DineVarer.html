@@ -20,11 +20,10 @@
           <div class="camera-1"></div>
         </div>
         <div class="blue-box">
-          <div class="DineVarer-text"></div>
-        </div>
-        <div class="top-text">          
-          <div class="Dine-varer">Dine-varer:</div>
-          <div class="Utløpsdato">Utløpsdato:</div>
+          <div class="DineVarer-text">
+            <div class="Dine-varer-text">Dine varer:</div>
+            <div class="Utløpsdato-text">Utløpsdato:</div>
+          </div>
         </div>
         <div class="utløpsdato-container">
           <div class="utløpsdato text-1">
@@ -226,11 +225,18 @@
       align-items: center;
       font-size: 8px;
       color: white;
-      height: 13.5%;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .DineVarer-text {
-      margin-top: -10px;
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
     }
 
     .top-text {
@@ -254,7 +260,7 @@
     .utløpsdato-container {
       height: 80%;
       width: 100%;
-      margin-top: 31.9%;
+      margin-top: 20%;
       position: absolute;
       grid: 100px;
       overflow: auto;
