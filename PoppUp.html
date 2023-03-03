@@ -35,26 +35,27 @@
               Vil du motta varslinger når varene dine går ut på dato?
             </center>
           </div>
-          <button class="knapp-ja-box1">Ja</button>
-          <button class="knapp-nei-box1">Nei</button>
+          <button onclick="document.getElementsByClassName('knapp-ja-box1')[0].style.backgroundColor = '#003fa59a';" class="knapp knapp-ja-box1">Ja</button>
+          <button onclick="document.getElementsByClassName('knapp-nei-box1')[0].style.backgroundColor = '#003fa59a';" class="knapp knapp-nei-box1">Nei</button>
         </div>
         <div class="contain-boks-3">
           <div class="text-2">
             Hvor mange dager før varene går ut på dato ønsker du å få varsling?
           </div>
-          <button class="valg-1">1</button>
-          <button class="valg-2">3</button>
-          <button class="valg-3">5</button>
+          <button onclick="document.getElementsByClassName('valg-1')[0].style.backgroundColor = '#003fa59a';" class="knapp valg-1">1</button>
+          <button onclick="document.getElementsByClassName('valg-2')[0].style.backgroundColor = '#003fa59a';" class="knapp valg-2">3</button>
+          <button onclick="document.getElementsByClassName('valg-3')[0].style.backgroundColor = '#003fa59a';" class="knapp valg-3">5</button>
         </div>
         <div class="contain-boks-4">
           <div class="text-3">Vill du motta forslag til sunne oppskrifter</div>
-          <button class="knapp-ja-box4">Ja</button>
-          <button class="knapp-nei-box4">Nei</button>
+          <button onclick="document.getElementsByClassName('knapp-ja-box4')[0].style.backgroundColor = '#003fa59a';" class="knapp knapp-ja-box4">Ja</button>
+          <button onclick="document.getElementsByClassName('knapp-nei-box4')[0].style.backgroundColor = '#003fa59a';" class="knapp knapp-nei-box4">Nei</button>
         </div>
         <div class="contain-boks-5">
           <button
             onclick="window.location.href='Æ-app.html';"
-            class="Ferdig-knapp"
+            onclick="document.getElementsByClassName('knapp-ja-box1')[0].style.backgroundColor = 'blue';"
+            class="knapp Ferdig-knapp"
           >
             Ferdig
           </button>
@@ -106,7 +107,7 @@
         <div class="menu-bar">
           <button class="menu-button-1">
             <img
-              src="Bilder/hjem-knapp-fokus.png"
+              src="Bilder/hjem-knapp.png"
               alt=""
               class="hjem-knapp"
             />
@@ -253,6 +254,7 @@
       font-size: 10px;
       width: 80%;
       margin-top: 20px;
+      line-height: 130%;
     }
 
     .knapp-ja-box1 {
@@ -262,6 +264,7 @@
       width: 10%;
       font-size: 10px;
       height: 14px;
+      background-color: white;
     }
 
     .knapp-nei-box1 {
@@ -271,6 +274,7 @@
       width: 12%;
       font-size: 10px;
       height: 14px;
+      background-color: white;
     }
 
     .contain-boks-3 {
@@ -288,15 +292,17 @@
       font-size: 10px;
       width: 80%;
       margin-bottom: 20px;
+      line-height: 130%;
     }
 
     .valg-1 {
       position: absolute;
       margin-top: 40px;
-      margin-right: 50px;
+      margin-right: 80px;
       width: 10%;
       font-size: 10px;
       height: 14px;
+      background-color: white;
     }
 
     .valg-2 {
@@ -305,15 +311,17 @@
       width: 10%;
       font-size: 10px;
       height: 14px;
+      background-color: white;
     }
 
     .valg-3 {
       position: absolute;
       margin-top: 40px;
-      margin-left: 50px;
+      margin-left: 80px;
       width: 10%;
       font-size: 10px;
       height: 14px;
+      background-color: white;
     }
 
     .contain-boks-4 {
@@ -331,6 +339,7 @@
       font-size: 10px;
       width: 80%;
       margin-bottom: 20px;
+      line-height: 130%;
     }
 
     .knapp-ja-box4 {
@@ -340,6 +349,7 @@
       width: 10%;
       font-size: 10px;
       height: 14px;
+      background-color: white;
     }
 
     .knapp-nei-box4 {
@@ -349,6 +359,8 @@
       width: 12%;
       font-size: 10px;
       height: 14px;
+      background-color: white;
+      cursor: pointer;
     }
 
     .contain-boks-5 {
@@ -367,6 +379,8 @@
       width: 15%;
       font-size: 8px;
       height: 14px;
+      background-color: white;
+      cursor: pointer;
     }
 
     .menu-bar {
@@ -433,6 +447,14 @@
       margin-top: 2px;
       margin-right: px;
       margin-top: px;
+    }
+
+    .knapp {
+      border: none;
+      border-radius: 7px;
+      padding: 2px;
+      width: 30px;
+      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     }
   </style>
 </html>
